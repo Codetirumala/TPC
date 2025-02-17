@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Codedale</title>
+    <link rel="stylesheet" href="/css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h2>Create Account</h2>
+                <p>Join the Codedale community</p>
+            </div>
+            <form id="signup-form" class="auth-form">
+                <div class="form-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="username" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+            <div class="auth-footer">
+                <p>Already have an account? <a href="/signin">Sign In</a></p>
+            </div>
+            <div id="error-message" class="error-message"></div>
+        </div>
+    </div>
+    <script src="/js/auth.js"></script>
+</body>
+</html> 

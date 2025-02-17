@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Basics - DSA Sheet</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/dsa-sheet.css">
+    <link rel="stylesheet" href="/css/problem-list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body data-page="dsa-sheet">
+    <!-- Include your nav here -->
+    <nav>
+        <div class="logo">
+            <i class="fas fa-code"></i>
+            <span>Codedvault</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/jobs">Jobs</a></li>
+            <li><a href="/roadmaps" id="roadmapsLink">Roadmaps</a></li>
+            <li><a href="/companies">Companies</a></li>
+            <li><a href="/career-paths">Career Paths</a></li>
+            <li><a href="/dsa-sheet">DSA Sheet</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <button class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <!-- Profile Section (Initially Hidden) -->
+            <div class="profile-section hidden" id="profileSection">
+                <button class="profile-btn" id="profileBtn">
+                    <div class="profile-icon" id="profileIcon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <span id="username">User</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="profile-dropdown" id="profileDropdown">
+                    <div class="profile-header">
+                        <div class="profile-icon-large" id="dropdownProfileIcon">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="profile-info">
+                            <h4 id="dropdownUsername">User</h4>
+                            <p id="userEmail">user@example.com</p>
+                           
+                        </div>
+                    </div>
+                    <div class="profile-menu">
+                        <a href="/profile" class="menu-item">
+                            <div class="menu-icon">
+                                <i class="fas fa-user-edit"></i>
+                            </div>
+                            <div class="menu-content">
+                                <span>My Profile</span>
+                                <span class="menu-description">Personal information</span>
+                            </div>
+                        </a>
+                        <a href="/dashboard" class="menu-item">
+                            <div class="menu-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="menu-content">
+                                <span>Dashboard</span>
+                                <span class="menu-description">Your progress & stats</span>
+                            </div>
+                        </a>
+                        <a href="/courses" class="menu-item">
+                            <div class="menu-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="menu-content">
+                                <span>My Courses</span>
+                                <span class="menu-description">Your learning path</span>
+                            </div>
+                        </a>
+                        <a href="/settings" class="menu-item">
+                            <div class="menu-icon">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <div class="menu-content">
+                                <span>Settings</span>
+                                <span class="menu-description">Preferences & security</span>
+                            </div>
+                        </a>
+                        <div class="menu-divider"></div>
+                        <button id="logoutBtn" class="menu-item logout">
+                            <div class="menu-icon">
+                                <i class="fas fa-sign-out-alt"></i>
+                            </div>
+                            <div class="menu-content">
+                                <span>Logout</span>
+                                <span class="menu-description">End your session</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+        <button class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    
+    <main class="problem-container">
+        <div class="breadcrumb">
+            <a href="/dsa-sheet">Ultimate DSA Sheet</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>String Basics</span>
+        </div>
+
+        <div class="topic-header">
+            <div class="topic-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="topic-info">
+                <h1>String Basics</h1>
+                <div class="progress-stats">
+                    <span class="progress-count">
+                        <i class="fas fa-code"></i> 0/32 solved
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="problems-list">
+            <!-- 1. Reverse String -->
+            <div class="problem-card">
+                <div class="problem-status">
+                    <input type="checkbox" class="problem-checkbox">
+                </div>
+                <div class="problem-info">
+                    <h3>Reverse String</h3>
+                    <div class="problem-meta">
+                        <span class="difficulty easy">Easy</span>
+                        <a href="https://leetcode.com/problems/reverse-string" target="_blank" class="solve-link">
+                            <i class="fas fa-external-link-alt"></i> Solve Problem
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Valid Palindrome -->
+            <div class="problem-card">
+                <div class="problem-status">
+                    <input type="checkbox" class="problem-checkbox">
+                </div>
+                <div class="problem-info">
+                    <h3>Valid Palindrome</h3>
+                    <div class="problem-meta">
+                        <span class="difficulty easy">Easy</span>
+                        <a href="https://leetcode.com/problems/valid-palindrome" target="_blank" class="solve-link">
+                            <i class="fas fa-external-link-alt"></i> Solve Problem
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Continue with all other problems -->
+            <!-- 3. Length of Last Word -->
+            <div class="problem-card">
+                <div class="problem-status">
+                    <input type="checkbox" class="problem-checkbox">
+                </div>
+                <div class="problem-info">
+                    <h3>Length of Last Word</h3>
+                    <div class="problem-meta">
+                        <span class="difficulty easy">Easy</span>
+                        <a href="https://leetcode.com/problems/length-of-last-word" target="_blank" class="solve-link">
+                            <i class="fas fa-external-link-alt"></i> Solve Problem
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add all remaining problems following the same pattern -->
+            <!-- 4. Find the Index -->
+            <div class="problem-card">
+                <div class="problem-status">
+                    <input type="checkbox" class="problem-checkbox">
+                </div>
+                <div class="problem-info">
+                    <h3>Find the Index of the First Occurrence in a String</h3>
+                    <div class="problem-meta">
+                        <span class="difficulty medium">Medium</span>
+                        <a href="https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string" target="_blank" class="solve-link">
+                            <i class="fas fa-external-link-alt"></i> Solve Problem
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Continue with all other problems -->
+            <!-- Add all 32 problems following the same pattern -->
+
+            <!-- Last few examples -->
+            <div class="problem-card">
+                <div class="problem-status">
+                    <input type="checkbox" class="problem-checkbox">
+                </div>
+                <div class="problem-info">
+                    <h3>Text Justification</h3>
+                    <div class="problem-meta">
+                        <span class="difficulty hard">Hard</span>
+                        <a href="https://leetcode.com/problems/text-justification" target="_blank" class="solve-link">
+                            <i class="fas fa-external-link-alt"></i> Solve Problem
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="problem-card">
+                <div class="problem-status">
+                    <input type="checkbox" class="problem-checkbox">
+                </div>
+                <div class="problem-info">
+                    <h3>Word Ladder</h3>
+                    <div class="problem-meta">
+                        <span class="difficulty hard">Hard</span>
+                        <a href="https://leetcode.com/problems/word-ladder" target="_blank" class="solve-link">
+                            <i class="fas fa-external-link-alt"></i> Solve Problem
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/problem-tracking.js"></script>
+</body>
+</html> 

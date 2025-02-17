@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codedale - Join the Coding Revolution</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <i class="fas fa-code"></i>
+            <span>Codedvault</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/jobs">Jobs</a></li>
+            <li><a href="/roadmaps" id="roadmapsLink">Roadmaps</a></li>
+            <li><a href="/companies">Companies</a></li>
+            <li><a href="/career-paths">Career Paths</a></li>
+            <li><a href="/dsa-sheet">DSA Sheet</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <button class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <!-- Profile Section (Initially Hidden) -->
+            <div class="profile-section hidden" id="profileSection">
+                <button class="profile-btn" id="profileBtn">
+                    <div class="profile-icon" id="profileIcon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <span id="username">User</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="profile-dropdown" id="profileDropdown">
+                    <div class="profile-header">
+                        <div class="profile-icon-large" id="dropdownProfileIcon">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="profile-info">
+                            <h4 id="dropdownUsername">User</h4>
+                            <p id="userEmail">user@example.com</p>
+                           
+                        </div>
+                    </div>
+                    <div class="profile-menu">
+                        <a href="/profile" class="menu-item">
+                            <div class="menu-icon">
+                                <i class="fas fa-user-edit"></i>
+                            </div>
+                            <div class="menu-content">
+                                <span>My Profile</span>
+                                <span class="menu-description">Personal information</span>
+                            </div>
+                        </a>
+                        <a href="/dashboard" class="menu-item">
+                            <div class="menu-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="menu-content">
+                                <span>Dashboard</span>
+                                <span class="menu-description">Your progress & stats</span>
+                            </div>
+                        </a>
+                        <a href="/courses" class="menu-item">
+                            <div class="menu-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="menu-content">
+                                <span>My Courses</span>
+                                <span class="menu-description">Your learning path</span>
+                            </div>
+                        </a>
+                        <a href="/settings" class="menu-item">
+                            <div class="menu-icon">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <div class="menu-content">
+                                <span>Settings</span>
+                                <span class="menu-description">Preferences & security</span>
+                            </div>
+                        </a>
+                        <div class="menu-divider"></div>
+                        <button id="logoutBtn" class="menu-item logout">
+                            <div class="menu-icon">
+                                <i class="fas fa-sign-out-alt"></i>
+                            </div>
+                            <div class="menu-content">
+                                <span>Logout</span>
+                                <span class="menu-description">End your session</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Auth Buttons (Initially Visible) -->
+            <div class="auth-buttons" id="authButtons">
+                <a href="/signin" class="signin-btn">Sign In</a>
+                <a href="/signup" class="signup-btn">Sign Up</a>
+            </div>
+        </div>
+        <button class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <header>
+        <h1>Join the Coding Revolution</h1>
+        <p>Where Code Meets Opportunity – Empowering You to Become a 10x Better Developer, Standing Above the Rest!</p>
+        <a href="/signup" class="cta-btn">Get Started</a>
+    </header>
+    <script src="/js/script.js"></script>
+</body>
+</html>
