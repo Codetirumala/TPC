@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const authRoutes = require('./routes/auth');
 require('dotenv').config();
+const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -47,6 +48,20 @@ app.get('/dsa-sheet/string-basics', (req, res) => {
         res.status(500).send('Error loading String Basics page');
     }
 });
+
+// Add this route before your 404 handler
+app.get('/roadmaps/backend', (req, res) => {
+    try {
+        console.log('Serving backend roadmap page'); // Debug log
+        res.sendFile(path.join(__dirname, 'views', 'backend-roadmap.html'));
+    } catch (error) {
+        console.error('Error serving backend-roadmap.html:', error);
+        res.status(500).send('Error loading backend roadmap page');
+    }
+});
+
+// Update this route handler for array-basics
+
 
 // Error handling middleware
 app.use((err, req, res, next) => {
